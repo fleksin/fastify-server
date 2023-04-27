@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "tsc && cp ./package.json ./fastify/package.json",
+    "remote:bootstrap": "npm i && node index.js",
+    "deploy": "scp -r ./fastify root@124.221.148.179:/root/"
+  },
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/multipart": "^7.5.0",
+    "@types/node": "^18.15.11",
+    "fastify": "^4.15.0",
+    "typescript": "^5.0.2"
+  }
+}
